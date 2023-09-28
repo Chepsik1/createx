@@ -1,12 +1,11 @@
 <script >
 import AskQuestion from '../components/AskQuestion.vue'
-import ComponentFooter from '../components/ComponentFooter.vue'
 import FormDiscuss from '../components/FormDiscuss.vue'
 export default {
   components: {
     AskQuestion,
     FormDiscuss,
-    ComponentFooter
+    
   }
 
 }
@@ -68,8 +67,8 @@ export default {
     <section class="our_services">
       <h2>Our services</h2>
       <p>Createx Construction Bureau is a construction giant with a full range of construction services.</p>
-      <div class="our_services_blok">
-        <div>
+      <div class="our_services_blok ">
+        <div class="our_servicec__hover">
           <svg class="svg" width="53" height="52" viewBox="0 0 53 52" xmlns="http://www.w3.org/2000/svg">
             <g id="ic-construction" clip-path="url(#clip0_79217_2081)">
               <path id="Vector"
@@ -83,7 +82,7 @@ export default {
           </svg>
           <p>Construction</p>
         </div>
-        <div>
+        <div class="our_servicec__hover">
           <svg class="svg" width="53" height="52" viewBox="0 0 53 52" xmlns="http://www.w3.org/2000/svg">
             <g id="ic-plan" clip-path="url(#clip0_79217_1789)">
               <path id="Vector"
@@ -99,7 +98,7 @@ export default {
           </svg>
           <p>Project Development</p>
         </div>
-        <div>
+        <div class="our_servicec__hover">
           <svg class="svg" width="53" height="52" viewBox="0 0 53 52" xmlns="http://www.w3.org/2000/svg">
             <g id="ic-pantone" clip-path="url(#clip0_79217_1698)">
               <path id="Vector"
@@ -115,7 +114,7 @@ export default {
           </svg>
           <p>Interior Design</p>
         </div>
-        <div>
+        <div class="our_servicec__hover">
           <svg class="svg" width="53" height="52" viewBox="0 0 53 52" xmlns="http://www.w3.org/2000/svg">
             <g id="ic-painting">
               <path id="Vector"
@@ -167,12 +166,12 @@ export default {
     <section class="discuss">
       <FormDiscuss></FormDiscuss>
     </section>
-    <ComponentFooter></ComponentFooter>
+   
 
   </main>
 </template>
 
-<style>
+<style lang="scss">
 
 .discuss{
   min-height: 826px;
@@ -283,7 +282,7 @@ export default {
 
 .selected-projects>h3 {
 
-
+margin: 120px 0 0 0;
   color: var(--gray-900, #1E212C);
   /* h1 */
   font-family: Ubuntu;
@@ -300,36 +299,22 @@ export default {
   justify-content: center;
   gap: 30px;
 }
-
-.our_services_blok>div:hover {
-  background-image: url(../img/fon-blok.jpg);
-  color: #fff;
-  cursor: pointer;
-
-  .svg {
-    fill: #fff;
-  }
-}     
-
-
-
-/* .our_services_blok div:hover {
-    .svg{
-      fill: #fffefe;
-    
-  }
-  background-image: url(../img/fon-blok.jpg);
-  color: #fff;
-  cursor: pointer;
-  
- 
-  
-
-} */
 .svg {
   fill: rgb(255, 0, 0);
 
 }
+
+.our_servicec__hover:hover {
+  background-image: url(../img/fon-blok.jpg);
+  color: #fff;
+  cursor: pointer;
+
+    .svg{
+      fill: #fffefe;
+    
+  }
+}
+
 
 
 .our_services_blok {
@@ -349,11 +334,11 @@ export default {
 
 }
 
-.our_services_blok>div>img {
+/* .our_services_blok>div>img {
 
   fill: #333;
   stroke: #333;
-}
+} */
 
 .our_services>div {
   display: flex;
@@ -361,6 +346,7 @@ export default {
   justify-content: center;
   gap: 45px;
   margin: 60px 0 0 0;
+  padding: 0 0 80px 0;
 }
 
 .our_services>div>h4 {

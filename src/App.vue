@@ -1,6 +1,10 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import ComponentFooter from './components/ComponentFooter.vue';
 // import HelloWorld from './components/HelloWorld.vue'
+
+
+
 </script>
 
 <template>
@@ -40,6 +44,7 @@ import { RouterLink, RouterView } from 'vue-router'
   </header>
 
   <RouterView />
+  <ComponentFooter></ComponentFooter>
 </template>
 
 <style>

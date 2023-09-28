@@ -102,6 +102,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 21px */
+
 }
 .form-discuss>div>label {
     display: flex;
